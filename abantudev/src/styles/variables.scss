@@ -1,0 +1,20 @@
+//colors
+$base: #0384fc;
+$compliment : complement($base);
+$compliment-light: lighten($compliment, 10%);
+
+//fonts
+$mainFont: 'Cabin', sans-serif;
+
+@mixin nav ($position) {
+    color: $compliment-light;
+            font-size: 1.5rem;
+            font-family: $mainFont;
+            align-items: $position;
+}
+
+@mixin default($height){
+    position: relative;
+    width: 100%;
+    height: $height;
+}
