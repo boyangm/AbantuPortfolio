@@ -16,6 +16,24 @@
         h1{
             padding-top: 100px;
             margin: 0 auto;
+            @media only screen and (max-width: 600px) {
+                font-size: 1.75rem;
+  
+            }
+            @media screen and (min-width: 600px) and (max-width: 768px) { 
+                font-size: 3.5rem;
+                width: 100%;
+            }
+        }
+        h3{
+            @media only screen and (max-width: 600px) {
+                font-size: 1.75rem;
+  
+            }
+            @media screen and (min-width: 600px) and (max-width: 768px) { 
+                font-size: 3rem;
+                width: 100%;
+            }
         }
         .landingPage{
             width: 100%;
@@ -34,7 +52,16 @@
             width: 50%;
             font-size: 2.5rem;
             margin: 30px auto 30px;
-            
+            @media only screen and (max-width: 600px) {
+                font-size: 1.75rem;
+                width: 100%;
+  
+            }
+            @media screen and (min-width: 600px) and (max-width: 768px) { 
+                font-size: 2.25rem;
+                width: 100%;
+            }
+          
         }
         p{
             width: 50%;

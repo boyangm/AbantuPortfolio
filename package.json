@@ -7,9 +7,9 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix abantudev",
-    "dev" : "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix abantudev && npm run build --prefix newssite"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/boyangm/AbantuPortfolio.git"
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/boyangm/AbantuPortfolio#readme",
   "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
     "concurrently": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

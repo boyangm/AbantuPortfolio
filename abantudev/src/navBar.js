@@ -1,15 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
-
+import {NavLink} from 'react-router-dom'
+import Socials from './socials';
 const NavBar  = () =>{
  return(
 
      <div className= "navbar">
-         <h3 className= 'title'> Abantu Development</h3>
+         <h3 className= 'title'> Boyang Matsapola</h3>
+         <Socials></Socials>
          <div className = "links" >
-         <Link  to ='/projects' className="linkItems" >Projects</Link>
-         <Link to ='/contact' className="linkItems">Contact</Link>
-         <Link to = "/" className="linkItems" >Home</Link>
+         <NavLink exact to ='/projects' className="linkItems" >Projects</NavLink>
+         <NavLink  exact to ='/contact' className="linkItems">Contact</NavLink>
+         <NavLink exact to = "/home" className="linkItems" >Home</NavLink>
          </div>
      </div>
  )

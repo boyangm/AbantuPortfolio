@@ -1,0 +1,38 @@
+.contactCont{
+    position: relative;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    flex-flow: column; 
+
+    h3{
+        color: $base;
+        font-family: $mainFont;
+        font-size: 1.5rem;
+    }
+    label{
+        width: 100%;
+        color: $base;
+    }
+    input,
+    textarea{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1.25rem;
+        border: none;
+        border-bottom: 1px solid lightgray;
+    }
+    button{
+        background: $base;
+        margin-top: 10px;
+        width: 100px;
+        color: lighten($compliment,10%);
+        font-family: $mainFont;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        &:hover{
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

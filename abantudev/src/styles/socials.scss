@@ -1,0 +1,26 @@
+.social {
+    display:inline-flex;
+    position: relative;
+    justify-content:space-between;
+    width:33%;
+    align-self: center;
+    padding:10px 10%;
+    a{
+        width: 10%;
+    }
+    svg{
+        fill: $compliment-light;
+        &:hover{
+            fill: white;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 15px;
+            margin: 0 5px;
+
+        }
+        @media screen and (min-width: 600px) and (max-width: 768px) { 
+            width: 20px;
+            margin: 0 5px;
+        }
+    }    
+}

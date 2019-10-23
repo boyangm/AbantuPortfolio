@@ -1,5 +1,5 @@
 .cardbody{
-    width: 18rem;
+    width: 22rem;
     margin:0;
     position: relative;
     border: 1px solid lightgray;
@@ -23,5 +23,9 @@
         padding: 20px;
         color: $base;
         font-size: 1.2rem;
+        &:hover{
+            color: white;
+            cursor: pointer;
+        }
     }
 }
