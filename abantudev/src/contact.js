@@ -56,7 +56,7 @@ class Contact extends Component{
                 <input onChange = {this.handleChange}  value ={this.state.name} type= 'text' name = 'name' />
             <label for ="email">Email:</label>
                 <input onChange = {this.handleChange} value ={this.state.email}  type= 'text' name = 'email' />
-            <label for ="message">message:</label>
+            <label for ="message">Message:</label>
                 <textarea onChange = {this.handleChange} value ={this.state.message}  name = 'message' />
             <button type="submit">Submit</button>
             </form>
