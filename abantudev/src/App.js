@@ -5,12 +5,11 @@ import NavBar from './navBar';
 import Home from './home';
 import Projects from './projects'
 import Contact from './contact'
-import history from "./history";
 
 
 function App() {
   return (
-    <BrowserRouter history={history}>
+    <BrowserRouter>
     <div>
     <NavBar></NavBar>
     <Switch>

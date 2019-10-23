@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import history from "./history"
-import {Redirect} from 'react-router-dom';
+
 
 class Contact extends Component{
     state = {
@@ -49,12 +48,15 @@ class Contact extends Component{
             },
             body: JSON.stringify(data) 
         }).then(res => { 
-            console.log(res);
+            console.log(data);
+            this.redirectToTarget();
+        }).catch( err =>{
+            console.log(err)
         })
-        console.log(data);
-        this.redirectToTarget();
         
     }
+
+
     render(){
         
         return(
