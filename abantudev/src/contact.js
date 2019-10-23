@@ -1,18 +1,25 @@
 import React, {Component} from 'react';
 import history from "./history"
-import {Route} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 
 class Contact extends Component{
     state = {
-            name: '',
-            email: '',
-            message: ''
+        name: '',
+        email: '',
+        message: '',
+        
+    }
+   
+
+    redirectToTarget =() =>{
+        this.props.history.push('/');
     }
     
     handleChange =(e) =>{
        const {name, value}= e.target;
         this.setState({[name]: value})
     }
+
     handleSubmit =(e) =>{
         e.preventDefault();
      const {name, email , message} = this.state;
@@ -24,27 +31,29 @@ class Contact extends Component{
         );
         e.target.reset();
        this.renderData(this.state)
-        
-        
+       this.setState({
+           name: '',
+           email: '',
+           message: ''
+       })
+       
     }
-
-
+    
+    
     renderData = data =>{
         fetch('/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
                 // 'Content-Type': 'application/x-www-form-urlencoded',
-              },
-              body: JSON.stringify(data) 
+            },
+            body: JSON.stringify(data) 
         }).then(res => { 
             console.log(res);
         })
         console.log(data);
-        return (
-            <Route
-              path="/" />
-          );
+        this.redirectToTarget();
+        
     }
     render(){
         
