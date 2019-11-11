@@ -1,0 +1,366 @@
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  background: #0384fc;
+}
+
+.navbar .title {
+  color: #fd9535;
+  font-size: 1.5rem;
+  font-family: "Cabin", sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+  width: 33%;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .title {
+    font-size: .8rem;
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .navbar .title {
+    font-size: 1.2rem;
+  }
+}
+
+.navbar .links {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 33%;
+  margin: 0;
+}
+
+.navbar .links .linkItems {
+  color: #fd9535;
+  font-size: 1.5rem;
+  font-family: "Cabin", sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  text-decoration: none;
+}
+
+.navbar .links .linkItems.active {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .links .linkItems {
+    font-size: .8rem;
+    margin: 0 10px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .navbar .links .linkItems {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    font-size: .75rem;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.container .imgCont {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url("https://careertraining.ed2go.com/common/images/1/16732/desktop-application-development.jpg") center no-repeat;
+  background-size: cover;
+  background-color: darkgray;
+  background-blend-mode: multiply;
+  color: white;
+  letter-spacing: .5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.container .imgCont h1 {
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container .imgCont h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .container .imgCont h1 {
+    font-size: 3.5rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container .imgCont h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .container .imgCont h3 {
+    font-size: 3rem;
+    width: 100%;
+  }
+}
+
+.container .imgCont .landingPage {
+  width: 100%;
+  height: 400px;
+}
+
+.container .main-Content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .main-Content .heading {
+  color: #fd9535;
+  font-size: 1.5rem;
+  font-family: "Cabin", sans-serif;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  font-size: 2.5rem;
+  margin: 30px auto 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container .main-Content .heading {
+    font-size: 1.75rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .container .main-Content .heading {
+    font-size: 2.25rem;
+    width: 100%;
+  }
+}
+
+.container .main-Content p {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container .main-Content p {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .container .main-Content p {
+    width: 90%;
+  }
+}
+
+.cardbody {
+  width: 22rem;
+  margin: 0;
+  position: relative;
+  border: 1px solid lightgray;
+  background: #fdb068;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+}
+
+.cardbody .projectTitle {
+  color: #0384fc;
+  font-size: 1.5rem;
+}
+
+.cardbody img {
+  width: 100%;
+  height: 200px;
+}
+
+.cardbody .projectDesc {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.cardbody .projectLinks {
+  text-decoration: none;
+  padding: 20px;
+  color: #0384fc;
+  font-size: 1.2rem;
+}
+
+.cardbody .projectLinks:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardbody .projectLinks {
+    font-size: .8rem;
+  }
+}
+
+.mediaCont {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.contactCont {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.contactCont h3 {
+  color: #0384fc;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+}
+
+.contactCont label {
+  width: 100%;
+  color: #0384fc;
+}
+
+.contactCont input,
+.contactCont textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.25rem;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.contactCont button {
+  background: #0384fc;
+  margin-top: 10px;
+  width: 100px;
+  color: #fd9535;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.contactCont button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactCont button {
+    font-size: 1rem;
+  }
+}
+
+.social {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 33%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 10px 10%;
+}
+
+.social a {
+  width: 10%;
+}
+
+.social svg {
+  fill: #fd9535;
+}
+
+.social svg:hover {
+  fill: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .social svg {
+    width: 15px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .social svg {
+    width: 20px;
+    margin: 0 5px;
+  }
+}
+
+body {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */

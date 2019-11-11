@@ -12,9 +12,6 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 //Connect to the Mongo DB
-mongoose.connect("mongodb://localhost:27017/portfolioProject", { useNewUrlParser: true })
-.then(()=> console.log('Mongo Db connected'))
-.catch(err => console.log(err));
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/portfolioProject";
 mongoose.connect(MONGODB_URI)
