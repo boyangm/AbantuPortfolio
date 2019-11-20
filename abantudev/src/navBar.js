@@ -8,9 +8,9 @@ const NavBar  = () =>{
          <h3 className= 'title'> Boyang Matsapola</h3>
          <Socials></Socials>
          <div className = "links" >
+         <NavLink exact to = "/home" className="linkItems" >Home</NavLink>
          <NavLink exact to ='/projects' className="linkItems" >Projects</NavLink>
          <NavLink  exact to ='/contact' className="linkItems">Contact</NavLink>
-         <NavLink exact to = "/home" className="linkItems" >Home</NavLink>
          </div>
      </div>
  )

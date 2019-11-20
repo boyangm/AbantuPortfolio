@@ -10,7 +10,6 @@ import Contact from './contact'
 function App() {
   return (
     <BrowserRouter>
-    <div>
     <NavBar></NavBar>
     <Switch>
       <Route  exact path = "/" render={() => <Redirect to = '/home'/> } />
@@ -18,7 +17,6 @@ function App() {
       <Route path = "/projects" component = {Projects} />
       <Route path = "/contact" component = {Contact} />
     </Switch>
-    </div>
     </BrowserRouter>
   );
 }
