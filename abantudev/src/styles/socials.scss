@@ -12,6 +12,7 @@
         fill: $compliment-light;
         &:hover{
             fill: white;
+            transition: all .3s ease-in-out;
         }
         @media only screen and (max-width: 600px) {
             width: 15px;
