@@ -1,15 +1,25 @@
 //colors
 $base: #0384fc;
+$base1: #092842;
 $compliment : complement($base);
 $compliment-light: lighten($compliment, 10%);
-
+$mainFont1: 'Arvo', serif;
+$mainFont2: 'Quattrocento Sans', sans-serif;
+$mainFont3: 'Orbitron', sans-serif;
+$mainFont4: 'Audiowide', cursive;
+$mainFont5: 'Syncopate', sans-serif;
+$mainFont6: 'Staatliches', cursive;
+$mainFont7: 'Aldrich', sans-serif;
+$mainFont8: 'Space Mono', monospace;
+$mainFont9: 'Zilla Slab Highlight', cursive;
 //fonts
 $mainFont: 'Cabin', sans-serif;
+
 
 @mixin nav ($position) {
     color: $compliment-light;
             font-size: 1.5rem;
-            font-family: $mainFont;
+            font-family: $mainFont1;
             align-items: $position;
 }
 

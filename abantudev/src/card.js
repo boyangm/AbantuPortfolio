@@ -8,8 +8,10 @@ const Media = ({ data }) => {
             <img src= {image} alt ="description of event"></img>
             <h3 className = 'projectTitle'>{title}</h3>
             <p className = 'projectDesc'>{description}</p>
-            <a className = 'projectLinks' href = {link} rel="noopener noreferrer" target= "_blank">See Project</a>
-            <a className = 'projectLinks' href = {github} rel="noopener noreferrer" target= "_blank">See Repo</a>
+            <div className="projectLinksWrap">
+                <a className = 'projectLinks' href = {link} rel="noopener noreferrer" target= "_blank">See Project</a>
+                <a className = 'projectLinks' href = {github} rel="noopener noreferrer" target= "_blank">See Repo</a>
+            </div>
         </div>
     )
 }

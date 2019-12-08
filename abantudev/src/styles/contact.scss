@@ -6,13 +6,13 @@
     flex-flow: column; 
 
     h3{
-        color: $base;
-        font-family: $mainFont;
+        color: $base1;
+        font-family: $mainFont1;
         font-size: 1.5rem;
     }
     label{
         width: 100%;
-        color: $base;
+        color: $base1;
     }
     input,
     textarea{
@@ -23,16 +23,18 @@
         border-bottom: 1px solid lightgray;
     }
     button{
-        background: $base;
+        background: $base1;
         margin-top: 10px;
+        padding: 5px;
         width: 100px;
         color: lighten($compliment,10%);
-        font-family: $mainFont;
+        font-family: $mainFont1;
         font-size: 1.5rem;
         border-radius: 10px;
         &:hover{
             color: white;
             cursor: pointer;
+            transition: all .3s ease-in-out;
         }
         @media only screen and (max-width: 600px) {
             font-size: 1rem;

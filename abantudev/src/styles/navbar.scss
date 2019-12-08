@@ -5,10 +5,10 @@
     height: auto;
     justify-content: space-between;
     flex-flow: row;
-    background: $base;
+    background: $base1;
         .title{
             @include nav(center);
-            margin-left: 5px;
+            margin-left: 10px;
             width: 33%;
             @media only screen and (max-width: 600px) {
                 font-size: .8rem;
@@ -28,6 +28,7 @@
             align-self: center;
             width: 33%;
             margin: 0;
+            margin-left: 10px;
             .linkItems{
                 @include nav(center);
                 width: 33%;
@@ -35,6 +36,7 @@
                 &.active{
                     color: white;
                 }
+                &:hover {color: white; transition: all .3s ease-in-out;}
                 @media only screen and (max-width: 600px) {
                     font-size: .8rem;
                     margin: 0 10px;
