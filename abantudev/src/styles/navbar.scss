@@ -3,28 +3,34 @@
     display: flex;
     width: 100%;
     height: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: row;
     background: $base1;
-        .title{
-            @include nav(center);
-            margin-left: 10px;
-            width: 33%;
+    .title{
+        @include nav(center);
+        margin-left: 10px;
+        width: 33%;
+        align-self: center;
+            text-decoration: none;
             @media only screen and (max-width: 600px) {
                 font-size: .8rem;
-                width: 40px;
   
             }
             @media screen and (min-width: 600px) and (max-width: 768px) { 
                 font-size: 1.2rem;
             
             }
+            &.active{
+                color: white;
+            }
+            
+            &:hover {color: white; transition: all .3s ease-in-out;}
         }
         .links{
             
             position: relative;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-self: center;
             width: 33%;
             margin: 0;
@@ -32,10 +38,12 @@
             .linkItems{
                 @include nav(center);
                 width: 33%;
+                flex-basis: 1;
                 text-decoration: none;
                 &.active{
                     color: white;
                 }
+
                 &:hover {color: white; transition: all .3s ease-in-out;}
                 @media only screen and (max-width: 600px) {
                     font-size: .8rem;
