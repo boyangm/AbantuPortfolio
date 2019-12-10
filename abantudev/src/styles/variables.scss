@@ -26,6 +26,6 @@ $mainFont: 'Cabin', sans-serif;
 @mixin default($height){
     position: relative;
     width: 100%;
-    height: $height;
+    min-height: $height;
 }
 

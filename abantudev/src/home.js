@@ -1,6 +1,9 @@
 import React from 'react';
-import {text} from './text';
-const Home = ({ match }) => {
+import {text,skills} from './text';
+import Skillset from './skillset';
+import Profilepic from './assets/boyangProfile.jpg'
+const Home = (props) => {
+    const {match} = props;
     return (
         <div className="container">
             <div className="imgCont">
@@ -9,7 +12,12 @@ const Home = ({ match }) => {
             </div>
             <div className = "main-Content">
                <h2 className = "heading">Bringing Creative Solutions to You</h2>
-               <p>{text}</p>
+               <h3 className = "subHeading">About Me</h3>
+               <div className='about'>
+               <img src={Profilepic}/>
+                <p>{text}</p>
+               </div>
+               <Skillset {...props} data= {skills}></Skillset>
             </div>
         </div>
 

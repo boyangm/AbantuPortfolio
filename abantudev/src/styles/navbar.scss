@@ -6,6 +6,16 @@
     justify-content: space-around;
     flex-flow: row;
     background: $base1;
+    @media only screen and (max-width: 600px) {
+        position: fixed;
+        z-index: 2;
+
+    }
+    @media screen and (min-width: 600px) and (max-width: 768px) { 
+        position: fixed;
+        z-index: 2;
+    
+    }
     .title{
         @include nav(center);
         margin-left: 10px;
