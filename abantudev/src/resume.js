@@ -5,7 +5,7 @@ const Resume = () => {
 
     return (
        <div className = 'downloadCont'>
-        <Link className='subHeading resume' to= {BoyangRes} target="_blank" download>Download my Resume</Link>
+        <Link className='subHeading resume' to= {BoyangRes} target="_blank" download>Download My Resume</Link>
        </div>
     )
 }
