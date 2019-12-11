@@ -5,6 +5,12 @@ export const projectList = [
     link: 'https://merngiggrab.herokuapp.com/home',
     github: 'https://github.com/boyangm/GigGrabv2.0'
     },
+    {title : 'Racr',
+    image: 'https://cdn.vox-cdn.com/thumbor/KO_gWQtcDEpfVrmVFuJnb9EYHo0=/0x40:1000x790/1200x800/filters:focal(0x40:1000x790)/cdn.vox-cdn.com/uploads/chorus_image/image/46889290/shutterstock_266758136.0.0.jpg',
+    description: 'React Web App to Allow Runners to race One Another',
+    link: 'https://mernracr.herokuapp.com/',
+    github: 'https://github.com/MissWibbon/racr'
+    },
     {title : 'Daily Dally',
     image: 'https://media.wsls.com/photo/2017/04/24/Whats%20News%20Today_1493062809311_9576980_ver1.0_1280_720.png',
     description: ' A full Stack React / Express App that lets you know the Headlines of today',
