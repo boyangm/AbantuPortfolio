@@ -5,6 +5,11 @@
     width:20%;
     align-self: center;
     padding:10px 10%;
+    @media only screen and (max-width: 768px) {
+       width: 33%;
+        
+
+    }
     a{
         width: 10%;
     }
@@ -17,6 +22,7 @@
         @media only screen and (max-width: 600px) {
             width: 15px;
             margin: 0 5px;
+            
 
         }
         @media screen and (min-width: 600px) and (max-width: 768px) { 
