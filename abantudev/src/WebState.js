@@ -1,5 +1,4 @@
-import React from 'react'
-import { get } from 'http';
+import React, {useState} from 'react'
 
 
 
@@ -7,17 +6,25 @@ import { get } from 'http';
 export const WebState = React.createContext()
 
 export const Provider  = (props) =>{
+    const [status, setStatus] = useState('hidden')
 
 const handlePoint = (elem, num) =>{
    const point = elem.getBoundingClientRect().top
-    console.log(`${elem} is at ${point}`)
     if(point <= num ){
         elem.classList.add('Loaded')
     }
 }
+const handleResume = (elem, num) =>{
+   const point = elem.getBoundingClientRect().top
+    if(point < 0  ){
+        setStatus('')
+    }else{
+        setStatus('hidden')
+    }
+}
 
     return(
-        <WebState.Provider value = {{handlePoint}}>
+        <WebState.Provider value = {{handlePoint, handleResume, status}}>
             {props.children}
         </WebState.Provider>
     )

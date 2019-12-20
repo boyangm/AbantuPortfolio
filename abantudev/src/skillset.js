@@ -4,12 +4,19 @@ import {WebState} from './WebState'
 const Skillset = (props) =>{
 const {data} = props;
 const context = useContext(WebState);
-const {handlePoint} = context;
+const {handlePoint, handleResume} = context;
 const skillRef = useRef(null)
 
 const handleScroll = () =>{
     handlePoint(skillRef.current, 600)
+    handleResume(skillRef.current)
+   
 }
+const handleScroll2 = () =>{
+   
+}
+
+
  useEffect(()=>{
      window.addEventListener('scroll', handleScroll)
 
