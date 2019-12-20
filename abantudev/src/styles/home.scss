@@ -2,33 +2,40 @@
     @include default(100vh);
     .imgCont{
         @include default(400px);
+        
         background: url('https://careertraining.ed2go.com/common/images/1/16732/desktop-application-development.jpg') center no-repeat;
         background-size: cover;
         background-color:darkgray;
         background-blend-mode: multiply;
         
         color: white;
-    
+        
         letter-spacing: .5rem;
         font-size: 2.5rem;
         text-align: center;
         padding: 50px 0 20px;
+        @media only screen and (max-width: 600px) {
+            padding: 0 0 20px;
+
+        }
+       
+        @media only screen and (min-width: 768px) {
+        background-attachment: fixed;        
+        }
         h1{
             padding-top: 100px;
             margin: 0 auto;
+            
             @media only screen and (max-width: 600px) {
                 font-size: 1.75rem;
-                padding: 0;
+                padding-bottom: 0;
   
             }
-            @media only screen and (min-width: 768px) {
-                background-attachment: fixed;
-  
-            }
+           
             @media screen and (min-width: 600px) and (max-width: 768px) { 
                 font-size: 3.5rem;
                 width: 100%;
-                padding: 0;
+                padding-bottom: 0;
             }
         }
         h3{
