@@ -8,7 +8,7 @@ const {handlePoint, handleResume} = context;
 const skillRef = useRef(null)
 
 const handleScroll = () =>{
-    handlePoint(skillRef.current, 600)
+    handlePoint(skillRef.current, 700)
     handleResume(skillRef.current)
    
 }
