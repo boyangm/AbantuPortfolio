@@ -3,6 +3,7 @@ import {text,skills} from './text';
 import Skillset from './skillset';
 import Profilepic from './assets/boyangProfile.jpg'
 import Resume from './resume'
+import Projects from './projects'
 const Home = (props) => {
     const {match} = props;
     return (
@@ -20,6 +21,7 @@ const Home = (props) => {
                 <p>{text}</p>
                </div>
                <Skillset {...props} data= {skills}></Skillset>
+               <Projects {...props}></Projects>
             </div>
         </div>
 

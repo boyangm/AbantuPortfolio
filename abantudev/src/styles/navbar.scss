@@ -1,14 +1,15 @@
 .navbar{
-    position: relative;
+    position: fixed;
     display: flex;
     width: 100%;
     height: auto;
     justify-content: space-around;
     flex-flow: row;
+    z-index: 2;
     background: $base1;
     @media only screen and (max-width: 600px) {
         position: fixed;
-        z-index: 2;
+       
 
     }
     @media screen and (min-width: 600px) and (max-width: 768px) { 

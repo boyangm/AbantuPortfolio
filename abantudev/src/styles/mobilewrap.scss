@@ -1,6 +1,7 @@
 .mobileWrap{
 position: relative;
 display: flex;
+opacity: 0;
 justify-content: center;
     width: 100%;
     @media screen and (max-width: 768px) {
@@ -11,6 +12,7 @@ justify-content: center;
         height: 90vh;
         padding: 20px;
         border: 5px solid grey;
+        background: lightgrey;
         border-radius: 10px;
         margin: 0 auto;
         @media screen and (max-width: 768px) {
@@ -18,4 +20,7 @@ justify-content: center;
         }
     }
 
+}
+.Loaded{
+   @include anime
 }

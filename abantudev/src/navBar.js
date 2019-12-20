@@ -8,7 +8,6 @@ const NavBar  = () =>{
          <NavLink exact to = "/home" className="title" >Boyang Matsapola</NavLink>
          {/* <h3 className= 'title'> Boyang Matsapola</h3> */}
          <div className = "links" >
-         <NavLink exact to ='/projects' className="linkItems" >Projects</NavLink>
          <NavLink  exact to ='/contact' className="linkItems">Contact</NavLink>
          </div>
          <Socials></Socials>
