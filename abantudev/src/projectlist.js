@@ -1,3 +1,4 @@
+import AltRoomA from '../src/assets/AltRoomA.JPG'
 export const projectList = [
     {title : 'Giggrab',
     image: 'http://career.iresearchnet.com/wp-content/uploads/2015/05/Musician-1.jpg',
@@ -11,11 +12,11 @@ export const projectList = [
     link: 'https://mernracr.herokuapp.com/',
     github: 'https://github.com/MissWibbon/racr'
     },
-    {title : 'Daily Dally',
-    image: 'https://media.wsls.com/photo/2017/04/24/Whats%20News%20Today_1493062809311_9576980_ver1.0_1280_720.png',
-    description: ' A full Stack React / Express App that lets you know the Headlines of today',
-    link: 'https://dailydally.herokuapp.com/',
-    github: 'https://github.com/boyangm/Newssite'
+    {title : 'PalletSound',
+    image: AltRoomA,
+    description: 'Freelance Website for Brideport Music Studio',
+    link: 'http://www.palletsound.com',
+    github: 'https://github.com/boyangm/PalletSound'
     },
     {title : 'Clicky Game',
     image: 'https://www.ixxiyourworld.com/media/1676571/Mickey-Mouse-2.jpg?mode=crop&width=130&height=130',
