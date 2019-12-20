@@ -6,6 +6,7 @@ class Contact extends Component {
         name: '',
         email: '',
         message: '',
+        errMessage: ''
 
     }
 
@@ -19,22 +20,35 @@ class Contact extends Component {
         this.setState({ [name]: value })
     }
 
+ // checks to make sure email is valid
+    ValidateEmail = (mail) => {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+            return (true)
+        }
+        this.setState({ errMessage: "You have entered an invalid email address!" })
+        return (false)
+    }
+
     handleSubmit = (e) => {
         e.preventDefault();
         const { name, email, message } = this.state;
-        this.setState({
-            name,
-            email,
-            message
+
+        let emailLower = email.toLowerCase()
+        if(this.ValidateEmail(emailLower) === true){
+            let body = {
+                name,
+                email: emailLower,
+                message
+            }
+            e.target.reset();
+            this.renderData(body)
+            this.setState({
+                name: '',
+                email: '',
+                message: ''
+            })
+            
         }
-        );
-        e.target.reset();
-        this.renderData(this.state)
-        this.setState({
-            name: '',
-            email: '',
-            message: ''
-        })
 
     }
 
@@ -66,6 +80,7 @@ class Contact extends Component {
                     <label for="name">Name:</label>
                     <input onChange={this.handleChange} value={this.state.name} type='text' name='name' />
                     <label for="email">Email:</label>
+                    <p className = 'err'>{this.state.errMessage}</p>
                     <input onChange={this.handleChange} value={this.state.email} type='text' name='email' />
                     <label for="message">Message:</label>
                     <textarea onChange={this.handleChange} value={this.state.message} name='message' />

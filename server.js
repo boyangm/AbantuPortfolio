@@ -11,12 +11,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.json());
 
-//Connect to the Mongo DB
-// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/portfolioProject";
-mongoose.connect(MONGODB_URI)
-.then(()=> console.log('Mongo Db connected'))
-.catch(err => console.log(err));
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('abantudev/build'))
