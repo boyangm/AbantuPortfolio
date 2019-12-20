@@ -18,7 +18,7 @@
             margin: 0 auto;
             @media only screen and (max-width: 600px) {
                 font-size: 1.75rem;
-                padding-bottom: 0;
+                padding: 0;
   
             }
             @media only screen and (min-width: 768px) {
@@ -28,7 +28,7 @@
             @media screen and (min-width: 600px) and (max-width: 768px) { 
                 font-size: 3.5rem;
                 width: 100%;
-                padding-bottom: 0;
+                padding: 0;
             }
         }
         h3{
