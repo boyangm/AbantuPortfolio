@@ -6,7 +6,7 @@
         background-size: cover;
         background-color:darkgray;
         background-blend-mode: multiply;
-        background-attachment: fixed;
+        
         color: white;
     
         letter-spacing: .5rem;
@@ -19,6 +19,10 @@
             @media only screen and (max-width: 600px) {
                 font-size: 1.75rem;
                 padding-bottom: 0;
+  
+            }
+            @media only screen and (min-width: 768px) {
+                background-attachment: fixed;
   
             }
             @media screen and (min-width: 600px) and (max-width: 768px) { 
