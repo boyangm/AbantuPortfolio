@@ -8,7 +8,7 @@ const Media = (props) => {
     const [mounted, setMounted ] = useState(true)
     const {handlePoint} = context
     const handlescroll = () =>{
-        handlePoint(idRef.current, 550)
+        handlePoint(idRef.current, 650)
 
     }
 

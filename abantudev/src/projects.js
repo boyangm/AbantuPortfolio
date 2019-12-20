@@ -11,7 +11,7 @@ const Projects = (props) => {
     const context = useContext(WebState)
     const {handlePoint} = context
     const handleScroll = () =>{
-        handlePoint(mobileRef.current, 200)
+        handlePoint(mobileRef.current, 400)
     }
 
     useEffect(()=>{

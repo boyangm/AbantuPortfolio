@@ -8,13 +8,11 @@ const MobileWrap = () => {
     const {handlePoint} = context
     const [mounted, setMounted ] = useState(true)
     const handleScroll =() =>{
-        handlePoint(mobileRef.current, 250)
+        handlePoint(mobileRef.current, 450)
     }
     useEffect(()=>{
       
             window.addEventListener('scroll', handleScroll)
-
-    
         return  () => window.removeEventListener('scroll', handleScroll)
     })
     return (
