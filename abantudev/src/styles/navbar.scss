@@ -51,7 +51,7 @@
                 width: 33%;
                 flex-basis: 1;
                 text-decoration: none;
-                transition: all 1s ease-in;
+                transition: opacity 1s ease-in;
                 &.active{
                     color: white;
                 }

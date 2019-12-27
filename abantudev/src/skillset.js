@@ -8,13 +8,11 @@ const {handlePoint, handleResume} = context;
 const skillRef = useRef(null)
 
 const handleScroll = () =>{
-    handlePoint(skillRef.current, 700)
+    handlePoint(skillRef.current, 800)
     handleResume(skillRef.current)
    
 }
-const handleScroll2 = () =>{
-   
-}
+
 
 
  useEffect(()=>{
