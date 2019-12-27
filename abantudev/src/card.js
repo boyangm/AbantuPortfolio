@@ -2,10 +2,9 @@ import React, { useContext, useEffect, useRef, useState} from 'react';
 import {WebState} from './WebState'
 
 const Media = (props) => {
-    const { key, number,title, image, description, link, github } = props.data;
+    const {title, image, description, link, github } = props.data;
     const idRef = useRef(null)
     const context = useContext(WebState)
-    const [mounted, setMounted ] = useState(true)
     const {handlePoint} = context
     const handlescroll = () =>{
         handlePoint(idRef.current, 650)
