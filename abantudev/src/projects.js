@@ -29,7 +29,7 @@ const Projects = (props) => {
                     <Media data={item} number ={projectList.indexOf(item)} key={projectList.indexOf(item)}></Media>
                 )}
             </div>
-            <h3 className='subHeading specialTitle desktop' ref={mobileRef}>My Mobile-First Web App Racr</h3>
+            <h3 className='subHeading specialTitle desktop' ref={mobileRef}>My Mobile-First Web App Gig Grab</h3>
             <MobileWrap className = 'desktop'></MobileWrap>
         </div>
     )

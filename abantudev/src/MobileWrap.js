@@ -17,7 +17,7 @@ const MobileWrap = () => {
     })
     return (
         <div className = 'mobileWrap' ref = {mobileRef}>
-        <iframe className = 'screen' src="http://mernracr.herokuapp.com/" seamless width="450" height="900"></iframe>
+        <iframe className = 'screen' src="https://merngiggrab.herokuapp.com/" seamless width="450" height="900"></iframe>
         </div>
     )
 }

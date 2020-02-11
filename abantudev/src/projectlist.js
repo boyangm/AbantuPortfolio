@@ -17,11 +17,5 @@ export const projectList = [
     description: 'Freelance React Website for Recording Artist Gem Tree',
     link: 'http://gemtree-website.s3-website.us-east-2.amazonaws.com/',
     github: 'https://github.com/boyangm/GemTreeSite'
-    },
-    {title : 'Racr',
-    image: 'https://cdn.vox-cdn.com/thumbor/KO_gWQtcDEpfVrmVFuJnb9EYHo0=/0x40:1000x790/1200x800/filters:focal(0x40:1000x790)/cdn.vox-cdn.com/uploads/chorus_image/image/46889290/shutterstock_266758136.0.0.jpg',
-    description: 'React Web App to Allow Runners to race One Another',
-    link: 'https://mernracr.herokuapp.com/',
-    github: 'https://github.com/MissWibbon/racr'
     }
 ]
