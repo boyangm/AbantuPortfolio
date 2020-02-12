@@ -7,36 +7,40 @@
     flex-flow: row;
     z-index: 2;
     background: $base1;
-    @media only screen and (max-width: 600px) {
-        position: fixed;
-       
+    @media only screen and (max-width: 768px) {
+        top: 0;
+        left: 0;
+        flex-flow: column;
+        text-align: center;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: transform 0.8s;
+        
+        
+        
+    }
+    &.move{
+    transform: translateX(0%);
+    transition: transform 0.8s;
+    }
 
-    }
-    @media screen and (min-width: 600px) and (max-width: 768px) { 
-        position: fixed;
-        z-index: 2;
-    
-    }
     .title{
         @include nav(center);
         margin-left: 10px;
         width: 33%;
         align-self: center;
             text-decoration: none;
-            @media only screen and (max-width: 600px) {
-                font-size: .8rem;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
   
             }
-            @media screen and (min-width: 600px) and (max-width: 768px) { 
-                font-size: 1.2rem;
-            
-            }
+         
             &.active{
                 color: white;
             }
             
             &:hover {color: white; transition: all .3s ease-in-out;}
-        }
+    }
         .links{
             
             position: relative;
@@ -57,26 +61,35 @@
                 }
 
                 &:hover {color: white; transition: all .3s ease-in-out;}
-                @media only screen and (max-width: 600px) {
-                    font-size: .8rem;
-                    margin: 0 10px;
-                    padding: 0;
-      
-                }
-                @media screen and (min-width: 600px) and (max-width: 768px) { 
-                    font-size: 1.2rem;
-                    margin: 0 10px;
-                    padding: 0;
-                }
+             
             }
-
+            @media only screen and (max-width: 600px) {
+                text-align: center;
+                flex-flow: column;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100%;
+                .linkItems{
+                    margin: 0 auto 15%;
+                    width: 100%;
+                    &.hidden{
+                        opacity: 1;
+                    }
+                }
+              }
         }
-        @media only screen and (max-width: 600px) {
-              font-size: .75rem;
-
-          }
         };
               .hidden{
                   opacity:0;
 
               }
+.toggle{
+    display: none;
+    @media only screen and (max-width:768px){
+        position: fixed;
+        displaY: block;
+        z-index: 100;
+        top:0;
+        left: 0;
+    }
+}
