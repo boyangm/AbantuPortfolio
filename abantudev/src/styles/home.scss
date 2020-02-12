@@ -27,6 +27,7 @@
             margin: 0 auto;
             
             @media only screen and (max-width: 600px) {
+                position: relative;
                 font-size: 1.75rem;
                 padding-bottom: 0;
   
@@ -82,7 +83,7 @@
             font-size: 1.5rem;
             margin: 30px auto 30px;
             @media only screen and (max-width: 600px) {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 width: 100%;
   
             }
@@ -118,6 +119,7 @@
                 width: 50%;
                 margin: 0 ;
                 line-height: 1.5rem;
+                font-size: 14px;
                 @media only screen and (max-width: 768px) {
                     width: 90%;
       
