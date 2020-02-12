@@ -35,11 +35,11 @@ const NavBar  = () =>{
         <img onClick = {handleToggle} className= 'toggle' src={`https://img.icons8.com/ios-filled/50/${code}/menu.png`}></img>
 
      <div className={navStatus}>
-         <NavLink exact to = "/home" className="title" >Boyang Matsapola</NavLink>
+         <NavLink onClick ={handleToggle}  exact to = "/home" className="title" >Boyang Matsapola</NavLink>
          {/* <h3 className= 'title'> Boyang Matsapola</h3> */}
          <div className = "links" >
-         <NavLink  exact to ='/contact' className="linkItems">Contact</NavLink>
-         <Link className={`linkItems ${status}`} to= {BoyangRes} target="_blank" download>Resume</Link>
+         <NavLink onClick ={handleToggle} exact to ='/contact' className="linkItems">Contact</NavLink>
+         <Link onClick ={handleToggle} className={`linkItems ${status}`} to= {BoyangRes} target="_blank" download>Resume</Link>
          </div>
          <Socials></Socials>
      </div>
