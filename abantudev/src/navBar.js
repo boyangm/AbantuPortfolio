@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from 'react';
 import {NavLink, Link} from 'react-router-dom'
 import Socials from './socials';
 import {WebState} from './WebState'
-import BoyangRes from '../src/assets/BoyangResume.pdf'
+import BoyangRes from '../src/assets/Boyang_Matsapola_-_Web_Developer .pdf'
 const NavBar  = () =>{
     const context = useContext(WebState)
     const [navStatus, setNavStatus] = useState('navbar')

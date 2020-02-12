@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import BoyangRes from '../src/assets/BoyangResume.pdf'
+import BoyangRes from '../src/assets/Boyang_Matsapola_-_Web_Developer .pdf'
 const Resume = () => {
 
     return (
