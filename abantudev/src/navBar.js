@@ -39,7 +39,7 @@ const NavBar  = () =>{
          {/* <h3 className= 'title'> Boyang Matsapola</h3> */}
          <div className = "links" >
          <NavLink onClick ={handleToggle} exact to ='/contact' className="linkItems">Contact</NavLink>
-         <Link onClick ={handleToggle} className={`linkItems ${status}`} to= {BoyangRes} target="_blank" download>Resume</Link>
+         <Link onClick ={handleToggle} className={`linkItems ${status}`} to= {BoyangRes} target= "_blank" download>Resume</Link>
          </div>
          <Socials></Socials>
      </div>
