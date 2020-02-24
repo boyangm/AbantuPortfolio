@@ -31,7 +31,7 @@ app.post('/api/contact', (req,res) =>{
             html: `<strong>${message}</strong>`,
           };
           sgMail.send(msg);
-          res.send('success');
+          res.send('success!');
     } catch (err){
         console.log(err);
         res.status(500).end();
